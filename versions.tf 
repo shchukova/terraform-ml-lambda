@@ -1,0 +1,14 @@
+# versions.tf (or at the top of your main.tf)
+terraform {
+  required_version = ">= 1.0.0" # Or your desired minimum Terraform version
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0" # Or your desired AWS provider version
+    }
+    archive = { # <--- MAKE SURE THIS BLOCK IS PRESENT
+      source  = "hashicorp/archive"
+      version = "~> 2.0" # Or the latest compatible version
+    }
+  }
+}
