@@ -7,9 +7,9 @@
 
 /* terraform {
   backend "s3" {
-    bucket         = "shchukova-ml-data-lake-bucket-unique-name-14587976567" # e.g., ml-infra-demo-terraform-state-us-east-1-unique
-    key            = "ml-infra-demo46/terraform.tfstate"
-    region         = "us-east-2" # Must match your var.aws_region
+    bucket         = "YOUR BUCKET NAME" # e.g., ml-infra-demo-terraform-state-us-east-1-unique
+    key            = "YOUR BUCKET KEY"
+    region         = "YOUR REGION" # Must match your var.aws_region
     dynamodb_table = "CHANGE_ME_TO_YOUR_DYNAMODB_TABLE_FOR_LOCKING" # e.g., ml-infra-demo-terraform-state-lock
     encrypt        = true
   }
